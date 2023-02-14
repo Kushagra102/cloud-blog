@@ -1,38 +1,413 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  background: white;
+  color: #242424;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-div {
+  background-color: #fbf4ee;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 0px) and (max-width: 767px) {
+  .home-div {
+    display: flex;
+    height: 1100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home-sub-div {
+  padding-top: 50px;
+}
+
+.home-sub-div2 {
+  padding-top: 100px;
+  padding-right: 50px;
+}
+
+.home-sub-div2>img {
+  transform: scale(1.5);
+}
+
+.title-1 {
+  font-family: 'Anek Telugu';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 124%;
+  padding-left: 100px;
+  letter-spacing: 0.002em;
+  text-transform: capitalize;
+  color: #242424;
+}
+
+.content {
+  font-family: 'Anek Telugu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+button {
+  padding: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #FF9998;
+  color: white;
+  border-radius: 8px;
+  border: 1px;
+  cursor: pointer;
+}
+
+h3,
+h4 {
+  margin-bottom: 0;
+}
+
+nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 100%;
+  color: #242424;
+  background: #fbf4ee;
+}
+
+nav ul {
+
+  list-style-type: none;
+  /* margin: ; */
+
+}
+
+.logo-div {
+  padding-left: 0;
+  margin-left: 0;
+  transform: scale(0.5);
+  padding-right: 50px;
+}
+
+nav li {
+  display: inline-block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #242424;
+  font-weight: bold;
+  padding: 24px 32px;
+}
+
+/* nav a:hover {
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border-radius: 50px;
+} */
+
+/* #page-body {
+  max-width: 700px;
+  margin: auto;
+  padding-top: 72px;
+} */
+
+.article-list-item {
+  text-decoration: none;
+  color: #4b4141;
+  padding: 16px 0 0 0;
+}
+
+.article-list-item p {
+  padding-bottom: 32px;
+  border-bottom: 2px solid #4b4141;
+}
+
+#add-comment-form {
+  border-bottom: 2px solid black;
+  padding: 16px;
+}
+
+#add-comment-form h3 {
+  margin-bottom: 16px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 300px;
+  padding: 8px;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  border: 2px solid black;
+  margin-bottom: 16px;
+}
+
+.error {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: pink;
+}
+
+#add-comment-form button {
+  width: 320px;
+}
+
+#upvotes-section button,
+p {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.comment {
+  border-bottom: 2px solid #4b4141;
+  padding: 16px;
+}
+
+.comment h4 {
+  color: #4b4141;
+}
+
+.comment p {
+  color: #4b4141;
+}
+
+.comments-div h3{
+  color: #4b4141;
+}
+
+.nav-right {
+  position: absolute;
+  top: 8px;
+  padding-top: 25px;
+  right: 8px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-adjust {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.image-div {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* .image1-m {
+  display: block;
+  margin: auto;
+} */
+
+.login-page {
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  /* text-align: center; */
+  font-family: 'Segoe UI';
+}
+
+.login-page .log-btn{
+  padding-bottom: 10px;
+}
+
+
+.input-field {
+  padding-left: 100px;
+}
+
+
+.stats-block {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 83px;
+  color: #FFFFFF;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .stats-block{
+    display: block;
+    text-align: center;
+    padding-left: 110px;
   }
 }
+
+
+
+.text-box {
+  width: 270px;
+  height: 187px;
+  border-radius: 20px;
+  background-color: #4b4141;
+  margin: 10px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 32px;
+  color: white;
+}
+
+.text-box-1 {
+  width: 270px;
+  height: 187px;
+  border-radius: 20px;
+  background-color: #ff9998;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 32px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-box {
+  width: 350px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  border: 3px solid #4b4141;
+  margin: 10px;
+  text-align: center;
+}
+
+.service-box>h5 {
+  font-size: 20px;
+}
+
+.service-subbox {
+  padding-top: 20px;
+}
+
+.our-services {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.our-services>h2 {
+  margin-bottom: 0;
+}
+
+.bottom-container a {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+.bottom-container a:hover {
+  cursor: pointer;
+  font-size: 20px;
+  color: #FF9998;
+}
+
+.bottom-container {
+  background-color: #4b4141;
+  padding: 30px 0 15px;
+  text-align: center;
+  display: block;
+}
+
+.copyright {
+  color: white;
+  font-size: 0.75rem;
+  padding: 15px 0;
+  line-height: 2;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 0;
+}
+
+.appoint {
+  display: flex;
+  width: 1170px;
+  height: 438px;
+  left: 135px;
+  top: 2233px;
+  background: #FBF4EE;
+  border-radius: 30px;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.appoint-3{
+  padding-top: 20px;
+}
+
+.appoint-1 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.parent-appoint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.about-page {
+  width: 50%;
+  margin: 0 auto;
+  padding-left: 48px;
+  /* text-align: center; */
+  font-family: 'Segoe UI';
+}
+
+.about-page h1{
+  color: #FF9998;
+  text-align: center;
+}
+
+.articles-list {
+  width: 50%;
+  margin: 0 auto;
+  padding-left: 48px;
+  /* text-align: center; */
+  font-family: 'Segoe UI';
+}
+
+.articles-list h1{
+  color: #FF9998;
+  text-align: center;
+}
+
+.articles-list h3 {
+  color:#4b4141
+}
+
+.articles-list p {
+  font-family: 'Segoe UI';
+}
+
